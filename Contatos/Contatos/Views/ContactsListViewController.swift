@@ -146,23 +146,10 @@ extension ContactsListViewController: UITableViewDataSource, UITableViewDelegate
         
         let detailContactVc: DetailViewController = self.storyboard?.instantiateViewController(identifier: "DetailViewController")  ?? DetailViewController()
         
-//        detailContactVc.contactDetail = controller.getContactByIndex(indexPath: indexPath)
         detailContactVc.detailController = DetailController(contact: controller.getContactByIndex(indexPath: indexPath))
         
         
         navigationController?.pushViewController(detailContactVc, animated: true)
-        
-        //        self.present(detailContactVc, animated: true, completion: nil)
-        
-        
-        // criar uma variavel onde vou mandar a coisa v
-        // criar uma instancia para mandar a coisa v
-        // mandar a coisa para a variavel criada v
-        // chamar a tela v
-        
-        
-        
-        
     }
     
 }

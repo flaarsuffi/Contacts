@@ -36,4 +36,11 @@ class  DetailController {
         return "\(self.contact.state ?? "")"
     }
     
+    var contactImage: String{
+        return "\(self.contact.picture ?? "")"
+    }
+    
+    var notes: String{
+        return "\(self.contact.notes ?? "")"
+    }
 }
