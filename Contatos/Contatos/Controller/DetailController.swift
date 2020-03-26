@@ -20,4 +20,20 @@ class  DetailController {
         return "\(self.contact.name ?? "") \(self.contact.lastName ?? "")"
     }
     
+    var cellPhone: String {
+        return "\(self.contact.phone ?? "")"
+    }
+    
+    var email: String {
+        return "\(self.contact.email ?? "")"
+    }
+    
+    var city: String {
+        return "\(self.contact.city ?? "")"
+    }
+    
+    var state: String {
+        return "\(self.contact.state ?? "")"
+    }
+    
 }

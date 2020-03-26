@@ -37,13 +37,12 @@ class DetailViewController: UIViewController {
     
     func setupView() {
         //        contactPhotoImageView?.sd_setImage(with: URL(string: contactDetail?.picture ?? ""), completed: nil)
-        //        fullNameLabel.text = "\(contactDetail?.name ?? "") \(contactDetail?.lastName ?? "")"
                 fullNameLabel.text = detailController?.fullName
-        //        telephoneLabel.text = contactDetail?.phone
-        //        emailLabel.text = contactDetail?.email
-        //        cityLabel.text = contactDetail?.city
-        //        stateLabel.text = contactDetail?.state
-        //        notesTextView.text = contactDetail?.notes
+                telephoneLabel.text = detailController?.cellPhone
+                emailLabel.text = detailController?.email
+                cityLabel.text = detailController?.city
+                stateLabel.text = detailController?.state
+                notesTextView.text = contactDetail?.notes
 
     }
 
