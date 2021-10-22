@@ -11,11 +11,20 @@ import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    typealias LaunchOptions = [UIApplication.LaunchOptionsKey: Any]
 
+    var window: UIWindow?
 
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: LaunchOptions?) -> Bool {
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let mainView = MainViewController()
+        let navigationController = UINavigationController(rootViewController: mainView )
+
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = navigationController
+        self.window?.makeKeyAndVisible()
+
         return true
     }
 
